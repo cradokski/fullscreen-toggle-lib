@@ -13,3 +13,4 @@ dist/
 *.tgz
 
 .project-notes/
+src/_backup/

@@ -1,3 +1,5 @@
+[![Issues](https://img.shields.io/github/issues/cradokski/fullscreen-toggle-lib)](https://github.com/cradokski/fullscreen-toggle-lib/issues)
+
 # fullscreen-toggle-lib
 
 > A lightweight, cross-browser fullscreen utility library for web apps — framework-agnostic and TypeScript-first. **Double Tap** optional.
