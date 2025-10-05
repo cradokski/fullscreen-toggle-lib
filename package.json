@@ -1,0 +1,41 @@
+{
+  "name": "fullscreen-toggle-lib",
+  "version": "1.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "test": "vitest"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "@vitest/ui": "^3.2.4",
+    "jsdom": "^26.1.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.4"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fullscreen",
+    "web",
+    "typescript",
+    "utility",
+    "cross-browser",
+    "toggle",
+    "fullscreen api",
+    "angular",
+    "react",
+    "vue",
+    "svelte"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

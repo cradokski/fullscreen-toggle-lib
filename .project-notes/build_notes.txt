@@ -1,0 +1,102 @@
+
+how to build and distribute to NPM ....
+
+ npm run build
+ npm pack
+ npm publish
+
+
+log 
+PS C:\Dev\angular\npm-packages\fullscreen-toggle-lib> npm run build
+
+> fullscreen-toggle-lib@1.1.0 build
+> npm run clean && tsc
+
+
+> fullscreen-toggle-lib@1.1.0 clean
+> rimraf dist
+
+PS C:\Dev\angular\npm-packages\fullscreen-toggle-lib> npm pack
+npm notice
+npm notice 📦  fullscreen-toggle-lib@1.1.0
+npm notice Tarball Contents
+npm notice 3.3kB README.md
+npm notice 72B dist/index.d.ts
+npm notice 121B dist/index.d.ts.map
+npm notice 49B dist/index.js
+npm notice 54B dist/src/_backup/vitest.config.d.ts
+npm notice 134B dist/src/_backup/vitest.config.d.ts.map
+npm notice 11B dist/src/_backup/vitest.config.js
+npm notice 1.5kB dist/src/fullscreen.d.ts
+npm notice 740B dist/src/fullscreen.d.ts.map
+npm notice 4.6kB dist/src/fullscreen.js
+npm notice 418B dist/src/fullscreen.test.utils.d.ts
+npm notice 417B dist/src/fullscreen.test.utils.d.ts.map
+npm notice 1.2kB dist/src/fullscreen.test.utils.js
+npm notice 54B dist/src/vitest.config.d.ts
+npm notice 123B dist/src/vitest.config.d.ts.map
+npm notice 11B dist/src/vitest.config.js
+npm notice 735B package.json
+npm notice Tarball Details
+npm notice name: fullscreen-toggle-lib
+npm notice version: 1.1.0
+npm notice filename: fullscreen-toggle-lib-1.1.0.tgz
+npm notice package size: 4.5 kB
+npm notice unpacked size: 13.5 kB
+npm notice shasum: a8f3e9162507219cd9b47528d26d7841b5f06458
+npm notice integrity: sha512-SGZfgGNbhwZ3X[...]VS0U8GNUxV5FQ==
+npm notice total files: 17
+npm notice
+fullscreen-toggle-lib-1.1.0.tgz
+PS C:\Dev\angular\npm-packages\fullscreen-toggle-lib> npm publish
+npm notice
+npm notice 📦  fullscreen-toggle-lib@1.1.0
+npm notice Tarball Contents
+npm notice 3.3kB README.md
+npm notice 72B dist/index.d.ts
+npm notice 121B dist/index.d.ts.map
+npm notice 49B dist/index.js
+npm notice 54B dist/src/_backup/vitest.config.d.ts
+npm notice 134B dist/src/_backup/vitest.config.d.ts.map
+npm notice 11B dist/src/_backup/vitest.config.js
+npm notice 1.5kB dist/src/fullscreen.d.ts
+npm notice 740B dist/src/fullscreen.d.ts.map
+npm notice 4.6kB dist/src/fullscreen.js
+npm notice 418B dist/src/fullscreen.test.utils.d.ts
+npm notice 417B dist/src/fullscreen.test.utils.d.ts.map
+npm notice 1.2kB dist/src/fullscreen.test.utils.js
+npm notice 54B dist/src/vitest.config.d.ts
+npm notice 123B dist/src/vitest.config.d.ts.map
+npm notice 11B dist/src/vitest.config.js
+npm notice 735B package.json
+npm notice Tarball Details
+npm notice name: fullscreen-toggle-lib
+npm notice version: 1.1.0
+npm notice filename: fullscreen-toggle-lib-1.1.0.tgz
+npm notice package size: 4.5 kB
+npm notice unpacked size: 13.5 kB
+npm notice shasum: a8f3e9162507219cd9b47528d26d7841b5f06458
+npm notice integrity: sha512-SGZfgGNbhwZ3X[...]VS0U8GNUxV5FQ==
+npm notice total files: 17
+npm notice
+npm notice Publishing to https://registry.npmjs.org/ with tag la+ fullscreen-toggle-lib@1.1.0
+PS C:\Dev\angular\npm-packages\fullscreen-toggle-lib>
+PS C:\Dev\angular\npm-packages\fullscreen-toggle-lib>        
+PS C:\Dev\angular\npm-packages\fullscreen-toggle-lib>        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

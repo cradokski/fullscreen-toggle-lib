@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# VS Code settings
+.vscode/
+
+# Logs and temp ond other files
+*.log
+*.tmp
+*.tgz
+
