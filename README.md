@@ -100,3 +100,10 @@ export class AppComponent implements OnInit, OnDestroy {
     delayMs: 500,// is default value
   };
 ``` 
+## 🐞 Issues
+
+Report bugs or request features here:  
+👉 [GitHub Issues](https://github.com/cradokski/fullscreen-toggle-lib/issues)
+
+## 📝 License
+None
