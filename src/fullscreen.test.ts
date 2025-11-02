@@ -3,6 +3,8 @@ import {
 	fullscreenToggle,
 	watchFullscreen,
 	isFullscreen,
+	ensureFullscreen,
+	ensureExitedFullscreen,
 	__resetFullscreenTapState // ✅ resets tap tracking state
 } from './fullscreen';
 import {
@@ -143,4 +145,35 @@ describe('fullscreen utilities', () => {
 		expect(status).toBe('entered'); // Should toggle to fullscreen
 		expect(mockElement.requestFullscreen).toHaveBeenCalled();
 	});
+
+	it('should enter fullscreen when ensureFullscreen is called and not in fullscreen', async () => {
+		const status = await ensureFullscreen(mockElement);
+		expect(status).toBe('entered');
+		expect(mockElement.requestFullscreen).toHaveBeenCalled();
+	});
+
+	it('should not call requestFullscreen if already in fullscreen when ensureFullscreen is called', async () => {
+		(document as any).fullscreenElement = mockElement;
+
+		const status = await ensureFullscreen(mockElement);
+		expect(status).toBe('entered'); // still returns entered
+		expect(mockElement.requestFullscreen).not.toHaveBeenCalled();
+	});
+
+	it('should exit fullscreen when ensureExitedFullscreen is called and currently in fullscreen', async () => {
+		(document as any).fullscreenElement = mockElement;
+
+		const status = await ensureExitedFullscreen();
+		expect(status).toBe('exited');
+		expect((document as any).exitFullscreen).toHaveBeenCalled();
+	});
+
+	it('should not call exitFullscreen if not in fullscreen when ensureExitedFullscreen is called', async () => {
+		(document as any).fullscreenElement = null;
+
+		const status = await ensureExitedFullscreen();
+		expect(status).toBe('exited');
+		expect((document as any).exitFullscreen).not.toHaveBeenCalled();
+	});
+
 });

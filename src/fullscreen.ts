@@ -137,6 +137,28 @@ function exitFullscreen(): Promise<FullscreenStatus> {
 	return Promise.reject(new Error('Fullscreen API not supported'));
 }
 
+
+/**
+ * Ensures that the browser is in fullscreen mode.
+ * If it's already in fullscreen, it does nothing.
+ *
+ * @param element The element to make fullscreen (defaults to document.documentElement)
+ * @returns A promise that resolves with the fullscreen status ('entered' if fullscreen, 'entered' again if already fullscreen)
+ */
+export function ensureFullscreen(element: HTMLElement = document.documentElement): Promise<FullscreenStatus> {
+	if (isFullscreen()) {
+		// Already fullscreen — no action needed
+		return Promise.resolve('entered');
+	}
+	return enterFullscreen(element);
+}
+export function ensureExitedFullscreen(): Promise<FullscreenStatus> {
+	if (!isFullscreen()) {
+		return Promise.resolve('exited');
+	}
+	return exitFullscreen();
+}
+
 /**
  * Resets internal double-tap tracking state.
  *
